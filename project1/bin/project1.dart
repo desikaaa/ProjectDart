@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:project1/project1.dart' as project1;
 const String nama = 'Desi';
 void main(List<String> arguments) {
@@ -10,4 +12,15 @@ void main(List<String> arguments) {
     //constanta dan final
     final String nama2 = 'Karmila';
     print("Nama saya $nama $nama2");
+    // variabel
+    int umur = 20;
+    double tinggi = 165;
+    bool jenis_kelamin = false; //false = perempuan, true = laki - laki
+    String alamat = 'Jl. Semanggi Barat No. 29A';
+    stdout.writeln("Umur saya $umur tahun");
+    stdout.writeln("Tinggi saya $tinggi cm");
+    stdout.writeln(
+      "Jenis kelamin saya ${jenis_kelamin ? 'laki-laki' : 'perempuan'}"
+      ); 
+    stdout.writeln("Alamat saya $alamat");
 }
