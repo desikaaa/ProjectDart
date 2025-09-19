@@ -22,5 +22,10 @@ void main(List<String> arguments) {
     stdout.writeln(
       "Jenis kelamin saya ${jenis_kelamin ? 'laki-laki' : 'perempuan'}"
       ); 
+      // if (jenis_kelamin==true) {
+      //  stdout.writeln("Jenis Kelamin saya laki-laki"
+      // ) else {
+      //  stdout.writeln("Jenis Kelamin saya perempuan"}
+      //}
     stdout.writeln("Alamat saya $alamat");
 }
