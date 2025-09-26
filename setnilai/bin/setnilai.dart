@@ -1,9 +1,6 @@
 import 'dart:io';
 
-import 'package:setnilai/setnilai.dart' as setnilai;
-
 void main(List<String> arguments) {
-  print('Hello world: ${setnilai.calculate()}!');
   var setnilai1 = <String>{};
   // var setnilai2 = <int>{1, 2, 3};
   stdout.writeln("Masukkan Jumlah Nilai: ");
@@ -16,7 +13,8 @@ void main(List<String> arguments) {
     setnilai1.add(nilai);
   }
 
-  print(setnilai1.elementAt(0));
+  var nilaitolist = setnilai1.toList();
+  print(nilaitolist.elementAt(0));
   // print(setnilai1.union(setnilai2));
   // print(setnilai1.intersection(setnilai2));
 }
