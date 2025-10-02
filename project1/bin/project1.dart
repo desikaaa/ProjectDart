@@ -1,5 +1,6 @@
 import 'dart:io';
 
+// ignore: unused_import
 import 'package:project1/project1.dart' as project1;
 const String nama = 'Desi';
 void main(List<String> arguments) {
@@ -15,11 +16,13 @@ void main(List<String> arguments) {
     // variabel
     int umur = 20;
     double tinggi = 165;
+    // ignore: non_constant_identifier_names
     bool jenis_kelamin = false; //false = perempuan, true = laki - laki
     String alamat = 'Jl. Semanggi Barat No. 29A';
     stdout.writeln("Umur saya $umur tahun");
     stdout.writeln("Tinggi saya $tinggi cm");
     stdout.writeln(
+      // ignore: dead_code
       "Jenis kelamin saya ${jenis_kelamin ? 'laki-laki' : 'perempuan'}"
       ); 
       // if (jenis_kelamin==true) {
@@ -50,4 +53,19 @@ void main(List<String> arguments) {
 
     stdout.writeln("Data : $data");
     stdout.writeln("Nama yang ada di data ${data ['nama']}");
+
+     try {
+ // Code that might throw an exception
+ // ignore: unused_local_variable
+ int result = 10 ~/ 0; // This will throw an IntegerDivisionByZeroException
+ } on IntegerDivisionByZeroException {
+ // Handles the specific IntegerDivisionByZeroException
+ print("Cannot divide by zero!");
+ } catch (e) {
+ // Handles any other type of exception and provides the exception object
+ print("An unexpected error occurred: $e");
+ } finally {
+ // Code that always executes, regardless of whether an exception occurred
+ print("Execution complete.");
+ }
 }
